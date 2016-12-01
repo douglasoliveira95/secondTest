@@ -5,15 +5,17 @@
     <title>Salary Paychack Calculator</title>
 </head>
 <body>
-    <fieldset>
-        <legend>Salary Paychack Calculator</legend>
+    <form action="/calcular" method="POST">
+        <fieldset>
+            <legend>Salary Paychack Calculator</legend>
 
-        <label>Salary</label>
-        <input type="text">
-        <input type="submit" value="Calc"><br>
-        <label>INSS</label><br>
-        <label>IRPF</label><br>
-        <label>Liquid Salary</label><br>
-    </fieldset>
+            <label>Salary</label>
+            <input type="text" name="salary">
+            <input type="submit" value="Calc"><br>
+            <label>INSS:</label> <label id="inss"></label><br>
+            <label>IRPF:</label> <label id="irpf"></label><br>
+            <label>Liquid Salary:</label> <label id="liquid"></label><br>
+        </fieldset>
+    </form>
 </body>
 </html>
