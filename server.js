@@ -4,15 +4,15 @@ const bodyParser = require ('body-parser')
 const express = require('express')
 const app = express();
 
+app.use(bodyParser())
+require('./routes.js')(app)
+
 const port = 8080;
 const hostname = 'localhost'
 
-require('./routes.js')(app)
-
-app.use(bodyParser())
-app.use(express.static("public"))
-
 app.listen(port, onStart());
+
+app.use(express.static("public"))
 
 function onStart() {
     console.log(`Server started at http://${hostname}:${port}`)
