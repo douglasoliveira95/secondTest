@@ -1,0 +1,23 @@
+{
+  "name": "secondtest",
+  "version": "1.0.0",
+  "description": "ultimatetest",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douglasoliveira95/secondTest.git"
+  },
+  "author": "Douglas Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/douglasoliveira95/secondTest/issues"
+  },
+  "homepage": "https://github.com/douglasoliveira95/secondTest#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}
