@@ -1,10 +1,14 @@
 "use strict"
 
+const bodyParser = require ('body-parser')
 const express = require('express')
 const app = express();
 
 const port = 8080;
 const hostname = 'localhost'
+
+app.use(bodyParser())
+app.use(express.static("public"))
 
 app.listen(port, onStart());
 
